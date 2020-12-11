@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<trackerConfig xml_tb_version="3.1" idx="1" type="struct" size="1 1">
+<nKeyPoints1024 idx="1" type="int" size="1 1">8</nKeyPoints1024>
+<incrementalParams idx="1" type="int" size="1 1">1 60 8 320 240</incrementalParams>
+<slamParams idx="1" type="int" size="3 1">60 100 10</slamParams>
+<optParams idx="1" type="int" size="3 1">10 3 3</optParams>
+</trackerConfig>

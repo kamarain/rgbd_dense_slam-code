@@ -1,0 +1,22 @@
+syntax: glob
+
+temp
+build
+external
+.vim
+.user
+.orig
+CMakeFiles*
+CMakeCache.txt
+src/Makefile
+.cmake
+.log
+*.aux
+*.log
+*.bbl
+*.blg
+*.backup
+*.out
+*~
+ext/PoissonRecon
+sequences

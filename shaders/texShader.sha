@@ -1,0 +1,50 @@
+//Cg
+//
+
+void vshader(float4 vtx_position : POSITION, 
+             float2 vtx_texcoord0 : TEXCOORD0,
+	     float3 vtx_normal     : NORMAL,
+             uniform float4x4 mat_modelproj,
+	     uniform float4x4 mat_modelview,
+	     uniform float4x4 trans_model_to_clip,
+             uniform float4 mspos_light,
+	     out float4 l_position : POSITION,
+	     out float2 l_texcoord0 : TEXCOORD0,
+	     out float2 l_invDepthAndBrightness : TEXCOORD1,
+	     out float4 l_texcoord1 : TEXCOORD2)
+{
+	float3 N = normalize(vtx_normal);
+	float3 lightVector = normalize(mspos_light - vtx_position);
+
+	float4 camVertex = mul(mat_modelview, vtx_position);
+	l_position=mul(mat_modelproj, vtx_position);
+	l_texcoord1=mul(trans_model_to_clip, vtx_position);
+	l_texcoord1.z = l_texcoord1.w;
+	l_texcoord0=vtx_texcoord0;
+	l_invDepthAndBrightness.x = abs(camVertex.w/camVertex.z);
+	l_invDepthAndBrightness.y = max(dot(N,lightVector), 0.15); 
+	//l_invDepthAndBrightness.y = min(l_invDepthAndBrightness.y+0.3,1.0);
+}
+
+
+void fshader(float4 l_position, float2 l_texcoord0 : TEXCOORD0, float2 l_invDepthAndBrightness : TEXCOORD1, float4 l_texcoord1 : TEXCOORD2,
+ 	     uniform sampler2D tex_0 : TEXUNIT0, uniform sampler2D k_kinect_depth_map : TEXUNIT1, 
+ 	     out float4 o_color : COLOR)
+{
+	float3 screen = l_texcoord1.xyz / l_texcoord1.w;
+  	float2 p2; 
+	p2.x = screen.x * 0.5 + 0.5f;
+	p2.y = -screen.y * 0.5 + 0.5f;
+
+	float4 texColor=tex2D(tex_0, l_texcoord0);
+	float4 kDepth=tex2D(k_kinect_depth_map, p2);
+
+	o_color=texColor*l_invDepthAndBrightness.y; o_color.w = 1.0f;
+
+	/*float depth = 1.0 / l_invDepthAndBrightness.x;
+	float kinectZ = kDepth.x*7000.0f;//*150.0f;
+	float thr = 0.1*7000.0f;//*150.0f;	
+	if (kinectZ < depth && kinectZ > thr) o_color.w = 0;	
+	if (kinectZ < thr) o_color.w = 1;*/
+}
+

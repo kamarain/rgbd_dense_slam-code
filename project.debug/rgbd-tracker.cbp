@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="rgbd-tracker" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;CMake Files\CMake\;CMake Files\..\;CMake Files\..\aurestudio\;CMake Files\..\aurestudio\sdk\;CMake Files\..\aurestudio\sdk\opencv-2.4.6.1\;CMake Files\..\aurestudio\sdk\opencv-2.4.6.1\project.linux\;CMake Files\ext\;CMake Files\ext\poisson\;CMake Files\ext\tinyxml\;CMake Files\src\;CMake Files\src\gputracker\;CMake Files\src\kinectRecorder\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/home/ttykkala/svn/rgbd-tracker/project.debug" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/ttykkala/svn/rgbd-tracker/project.debug/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/ttykkala/svn/rgbd-tracker/project.debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/ttykkala/svn/rgbd-tracker/project.debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/ttykkala/svn/rgbd-tracker/project.debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/home/ttykkala/svn/rgbd-tracker/project.debug" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/ttykkala/svn/rgbd-tracker/project.debug/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/ttykkala/svn/rgbd-tracker/project.debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/ttykkala/svn/rgbd-tracker/project.debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/ttykkala/svn/rgbd-tracker/project.debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="PoissonRecon">
+         <Option output="/home/ttykkala/svn/rgbd-tracker/project.debug/lib/libPoissonRecon.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/ttykkala/svn/rgbd-tracker/project.debug/ext/poisson" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/include/opencv" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/calib3d/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/contrib/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/core/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/features2d/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/flann/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/highgui/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/imgproc/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/legacy/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/ml/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/nonfree/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/objdetect/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/photo/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/stitching/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/superres/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/ts/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/video/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/project.linux" />
+            <Add directory="/home/ttykkala/svn/rgbd-tracker/ext/poisson" />
+            <Add directory="/home/ttykkala/svn/rgbd-tracker/ext/poisson/PoissonRecon/Src" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.8" />
+            <Add directory="/usr/include/c++/4.8/backward" />
+            <Add directory="/usr/include/freetype2" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.8" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+            <Add directory="/usr/local/cuda/include" />
+            <Add directory="/usr/local/cuda/samples/3_Imaging/histogram" />
+            <Add directory="/usr/local/cuda/samples/6_Advanced/reduction" />
+            <Add directory="/usr/local/cuda/samples/common/inc" />
+            <Add directory="/usr/local/include" />
+            <Add directory="/usr/local/include/libfreenect" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/ttykkala/svn/rgbd-tracker/project.debug/ext/poisson/Makefile&quot;  VERBOSE=1 PoissonRecon" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/ttykkala/svn/rgbd-tracker/project.debug/ext/poisson/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/ttykkala/svn/rgbd-tracker/project.debug/ext/poisson/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/ttykkala/svn/rgbd-tracker/project.debug/ext/poisson/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="PoissonRecon/fast">
+         <Option output="/home/ttykkala/svn/rgbd-tracker/project.debug/lib/libPoissonRecon.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/ttykkala/svn/rgbd-tracker/project.debug/ext/poisson" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/include/opencv" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/calib3d/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/contrib/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/core/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/features2d/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/flann/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/highgui/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/imgproc/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/legacy/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/ml/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/nonfree/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/objdetect/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/photo/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/stitching/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/superres/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/ts/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/video/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/project.linux" />
+            <Add directory="/home/ttykkala/svn/rgbd-tracker/ext/poisson" />
+            <Add directory="/home/ttykkala/svn/rgbd-tracker/ext/poisson/PoissonRecon/Src" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.8" />
+            <Add directory="/usr/include/c++/4.8/backward" />
+            <Add directory="/usr/include/freetype2" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.8" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+            <Add directory="/usr/local/cuda/include" />
+            <Add directory="/usr/local/cuda/samples/3_Imaging/histogram" />
+            <Add directory="/usr/local/cuda/samples/6_Advanced/reduction" />
+            <Add directory="/usr/local/cuda/samples/common/inc" />
+            <Add directory="/usr/local/include" />
+            <Add directory="/usr/local/include/libfreenect" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/ttykkala/svn/rgbd-tracker/project.debug/ext/poisson/Makefile&quot;  VERBOSE=1 PoissonRecon/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/ttykkala/svn/rgbd-tracker/project.debug/ext/poisson/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/ttykkala/svn/rgbd-tracker/project.debug/ext/poisson/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/ttykkala/svn/rgbd-tracker/project.debug/ext/poisson/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="tinyxml">
+         <Option output="/home/ttykkala/svn/rgbd-tracker/project.debug/lib/libtinyxml.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/ttykkala/svn/rgbd-tracker/project.debug/ext/tinyxml" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/include/opencv" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/calib3d/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/contrib/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/core/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/features2d/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/flann/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/highgui/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/imgproc/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/legacy/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/ml/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/nonfree/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/objdetect/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/photo/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/stitching/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/superres/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/ts/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/video/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/project.linux" />
+            <Add directory="/home/ttykkala/svn/rgbd-tracker/ext/tinyxml" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.8" />
+            <Add directory="/usr/include/c++/4.8/backward" />
+            <Add directory="/usr/include/freetype2" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.8" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+            <Add directory="/usr/local/cuda/include" />
+            <Add directory="/usr/local/cuda/samples/3_Imaging/histogram" />
+            <Add directory="/usr/local/cuda/samples/6_Advanced/reduction" />
+            <Add directory="/usr/local/cuda/samples/common/inc" />
+            <Add directory="/usr/local/include" />
+            <Add directory="/usr/local/include/libfreenect" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/ttykkala/svn/rgbd-tracker/project.debug/ext/tinyxml/Makefile&quot;  VERBOSE=1 tinyxml" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/ttykkala/svn/rgbd-tracker/project.debug/ext/tinyxml/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/ttykkala/svn/rgbd-tracker/project.debug/ext/tinyxml/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/ttykkala/svn/rgbd-tracker/project.debug/ext/tinyxml/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="tinyxml/fast">
+         <Option output="/home/ttykkala/svn/rgbd-tracker/project.debug/lib/libtinyxml.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/ttykkala/svn/rgbd-tracker/project.debug/ext/tinyxml" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/include/opencv" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/calib3d/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/contrib/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/core/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/features2d/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/flann/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/highgui/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/imgproc/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/legacy/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/ml/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/nonfree/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/objdetect/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/photo/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/stitching/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/superres/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/ts/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/video/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/project.linux" />
+            <Add directory="/home/ttykkala/svn/rgbd-tracker/ext/tinyxml" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.8" />
+            <Add directory="/usr/include/c++/4.8/backward" />
+            <Add directory="/usr/include/freetype2" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.8" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+            <Add directory="/usr/local/cuda/include" />
+            <Add directory="/usr/local/cuda/samples/3_Imaging/histogram" />
+            <Add directory="/usr/local/cuda/samples/6_Advanced/reduction" />
+            <Add directory="/usr/local/cuda/samples/common/inc" />
+            <Add directory="/usr/local/include" />
+            <Add directory="/usr/local/include/libfreenect" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/ttykkala/svn/rgbd-tracker/project.debug/ext/tinyxml/Makefile&quot;  VERBOSE=1 tinyxml/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/ttykkala/svn/rgbd-tracker/project.debug/ext/tinyxml/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/ttykkala/svn/rgbd-tracker/project.debug/ext/tinyxml/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/ttykkala/svn/rgbd-tracker/project.debug/ext/tinyxml/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="gputracker">
+         <Option output="/home/ttykkala/svn/rgbd-tracker/project.debug/lib/libgputracker.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/ttykkala/svn/rgbd-tracker/project.debug/src/gputracker" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/include/opencv" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/calib3d/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/contrib/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/core/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/features2d/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/flann/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/highgui/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/imgproc/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/legacy/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/ml/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/nonfree/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/objdetect/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/photo/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/stitching/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/superres/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/ts/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/video/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/project.linux" />
+            <Add directory="/home/ttykkala/svn/rgbd-tracker/project.debug/include" />
+            <Add directory="/home/ttykkala/svn/rgbd-tracker/src/gputracker" />
+            <Add directory="/home/ttykkala/svn/rgbd-tracker/src/gputracker/cudakernels" />
+            <Add directory="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils" />
+            <Add directory="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/capture" />
+            <Add directory="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/multicore" />
+            <Add directory="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/reconstruct" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.8" />
+            <Add directory="/usr/include/c++/4.8/backward" />
+            <Add directory="/usr/include/freetype2" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.8" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+            <Add directory="/usr/local/cuda/include" />
+            <Add directory="/usr/local/cuda/samples/3_Imaging/histogram" />
+            <Add directory="/usr/local/cuda/samples/6_Advanced/reduction" />
+            <Add directory="/usr/local/cuda/samples/common/inc" />
+            <Add directory="/usr/local/include" />
+            <Add directory="/usr/local/include/libfreenect" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/ttykkala/svn/rgbd-tracker/project.debug/src/gputracker/Makefile&quot;  VERBOSE=1 gputracker" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/ttykkala/svn/rgbd-tracker/project.debug/src/gputracker/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/ttykkala/svn/rgbd-tracker/project.debug/src/gputracker/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/ttykkala/svn/rgbd-tracker/project.debug/src/gputracker/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="gputracker/fast">
+         <Option output="/home/ttykkala/svn/rgbd-tracker/project.debug/lib/libgputracker.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/ttykkala/svn/rgbd-tracker/project.debug/src/gputracker" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/include/opencv" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/calib3d/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/contrib/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/core/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/features2d/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/flann/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/highgui/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/imgproc/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/legacy/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/ml/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/nonfree/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/objdetect/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/photo/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/stitching/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/superres/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/ts/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/video/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/project.linux" />
+            <Add directory="/home/ttykkala/svn/rgbd-tracker/project.debug/include" />
+            <Add directory="/home/ttykkala/svn/rgbd-tracker/src/gputracker" />
+            <Add directory="/home/ttykkala/svn/rgbd-tracker/src/gputracker/cudakernels" />
+            <Add directory="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils" />
+            <Add directory="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/capture" />
+            <Add directory="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/multicore" />
+            <Add directory="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/reconstruct" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.8" />
+            <Add directory="/usr/include/c++/4.8/backward" />
+            <Add directory="/usr/include/freetype2" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.8" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+            <Add directory="/usr/local/cuda/include" />
+            <Add directory="/usr/local/cuda/samples/3_Imaging/histogram" />
+            <Add directory="/usr/local/cuda/samples/6_Advanced/reduction" />
+            <Add directory="/usr/local/cuda/samples/common/inc" />
+            <Add directory="/usr/local/include" />
+            <Add directory="/usr/local/include/libfreenect" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/ttykkala/svn/rgbd-tracker/project.debug/src/gputracker/Makefile&quot;  VERBOSE=1 gputracker/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/ttykkala/svn/rgbd-tracker/project.debug/src/gputracker/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/ttykkala/svn/rgbd-tracker/project.debug/src/gputracker/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/ttykkala/svn/rgbd-tracker/project.debug/src/gputracker/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="kinectRecorder">
+         <Option output="/home/ttykkala/svn/rgbd-tracker/project.debug/bin/kinectRecorder" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/ttykkala/svn/rgbd-tracker/project.debug/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/include/opencv" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/calib3d/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/contrib/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/core/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/features2d/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/flann/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/highgui/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/imgproc/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/legacy/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/ml/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/nonfree/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/objdetect/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/photo/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/stitching/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/superres/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/ts/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/video/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/project.linux" />
+            <Add directory="/home/ttykkala/svn/rgbd-tracker" />
+            <Add directory="/home/ttykkala/svn/rgbd-tracker/project.debug/include" />
+            <Add directory="/home/ttykkala/svn/rgbd-tracker/src/gputracker" />
+            <Add directory="/home/ttykkala/svn/rgbd-tracker/src/gputracker/cudakernels" />
+            <Add directory="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils" />
+            <Add directory="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/capture" />
+            <Add directory="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/multicore" />
+            <Add directory="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/reconstruct" />
+            <Add directory="/home/ttykkala/svn/rgbd-tracker/src/kinectRecorder/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.8" />
+            <Add directory="/usr/include/c++/4.8/backward" />
+            <Add directory="/usr/include/freetype2" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.8" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+            <Add directory="/usr/local/cuda/include" />
+            <Add directory="/usr/local/cuda/samples/3_Imaging/histogram" />
+            <Add directory="/usr/local/cuda/samples/6_Advanced/reduction" />
+            <Add directory="/usr/local/cuda/samples/common/inc" />
+            <Add directory="/usr/local/include" />
+            <Add directory="/usr/local/include/libfreenect" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/ttykkala/svn/rgbd-tracker/project.debug/src/kinectRecorder/Makefile&quot;  VERBOSE=1 kinectRecorder" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/ttykkala/svn/rgbd-tracker/project.debug/src/kinectRecorder/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/ttykkala/svn/rgbd-tracker/project.debug/src/kinectRecorder/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/ttykkala/svn/rgbd-tracker/project.debug/src/kinectRecorder/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="kinectRecorder/fast">
+         <Option output="/home/ttykkala/svn/rgbd-tracker/project.debug/bin/kinectRecorder" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/ttykkala/svn/rgbd-tracker/project.debug/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/include/opencv" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/calib3d/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/contrib/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/core/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/features2d/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/flann/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/highgui/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/imgproc/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/legacy/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/ml/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/nonfree/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/objdetect/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/photo/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/stitching/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/superres/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/ts/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/modules/video/include" />
+            <Add directory="/home/ttykkala/svn/aurestudio/sdk/opencv-2.4.6.1/project.linux" />
+            <Add directory="/home/ttykkala/svn/rgbd-tracker" />
+            <Add directory="/home/ttykkala/svn/rgbd-tracker/project.debug/include" />
+            <Add directory="/home/ttykkala/svn/rgbd-tracker/src/gputracker" />
+            <Add directory="/home/ttykkala/svn/rgbd-tracker/src/gputracker/cudakernels" />
+            <Add directory="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils" />
+            <Add directory="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/capture" />
+            <Add directory="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/multicore" />
+            <Add directory="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/reconstruct" />
+            <Add directory="/home/ttykkala/svn/rgbd-tracker/src/kinectRecorder/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.8" />
+            <Add directory="/usr/include/c++/4.8/backward" />
+            <Add directory="/usr/include/freetype2" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.8" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+            <Add directory="/usr/local/cuda/include" />
+            <Add directory="/usr/local/cuda/samples/3_Imaging/histogram" />
+            <Add directory="/usr/local/cuda/samples/6_Advanced/reduction" />
+            <Add directory="/usr/local/cuda/samples/common/inc" />
+            <Add directory="/usr/local/include" />
+            <Add directory="/usr/local/include/libfreenect" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/ttykkala/svn/rgbd-tracker/project.debug/src/kinectRecorder/Makefile&quot;  VERBOSE=1 kinectRecorder/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/ttykkala/svn/rgbd-tracker/project.debug/src/kinectRecorder/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/ttykkala/svn/rgbd-tracker/project.debug/src/kinectRecorder/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/ttykkala/svn/rgbd-tracker/project.debug/src/kinectRecorder/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/ext/poisson/PoissonRecon-wrapper.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/ext/poisson/PoissonRecon/Src/CmdLineParser.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/ext/poisson/PoissonRecon/Src/Factor.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/ext/poisson/PoissonRecon/Src/Geometry.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/ext/poisson/PoissonRecon/Src/MarchingCubes.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/ext/poisson/PoissonRecon/Src/PlyFile.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/ext/poisson/PoissonRecon/Src/Time.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/ext/tinyxml/tinystr.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/ext/tinyxml/tinyxml.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/ext/tinyxml/tinyxmlerror.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/ext/tinyxml/tinyxmlparser.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/cudakernels/hostUtils.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/gputracker.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/calib/GroundTruth.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/calib/ResultTxt.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/calib/calib.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/camera/Camera.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/camera/InteractiveCamera.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/camera/Matrix.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/camera/OrbitingCamera.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/camera/Quaternion.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/camera/Vector.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/capture/Kinect.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/capture/KinectDisparityCompressor.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/capture/VideoPreProcessorCPU.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/capture/VideoPreProcessorGPU.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/capture/fileSource.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/expm/expmHost.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/image2/Image2.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/image2/ImagePyramid2.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/imagematch/ICP.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/multicore/multicore.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/reconstruct/KeyFrame.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/reconstruct/KeyFrameModel.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/reconstruct/basic_math.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/reconstruct/zconv.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/rendering/BaseBuffer2.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/rendering/GLWindow.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/rendering/LineBuffer.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/rendering/TriangleBuffer2.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/rendering/VertexBuffer2.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/rendering/shader.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/rendering/teapot.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/structure/configuration.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/warping/KeyFrameRing.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/kinectRecorder/kinectRecorder.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/kinectRecorder/testApplication.cpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/ext/poisson/PoissonRecon-wrapper.h">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/ext/poisson/PoissonRecon/Src/CmdLineParser.h">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/ext/poisson/PoissonRecon/Src/Factor.h">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/ext/poisson/PoissonRecon/Src/Geometry.h">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/ext/poisson/PoissonRecon/Src/MarchingCubes.h">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/ext/poisson/PoissonRecon/Src/PlyFile.h">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/ext/poisson/PoissonRecon/Src/Time.h">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/ext/tinyxml/tinystr.h">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/ext/tinyxml/tinyxml.h">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/cudakernels/adapted_histograms.cu">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/cudakernels/convert2FloatCuda.cu">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/cudakernels/d2z.cu">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/cudakernels/downSample2Cuda.cu">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/cudakernels/hostUtils.h">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/cudakernels/rgb2gray.cu">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/cudakernels/undistort.cu">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/cudakernels/warp.cu">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/gputracker.h">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/calib/GroundTruth.h">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/calib/ResultTxt.h">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/calib/calib.h">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/camera/Camera.hpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/camera/InteractiveCamera.hpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/camera/LinkedList.h">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/camera/Matrix.hpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/camera/OrbitingCamera.h">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/camera/Quaternion.hpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/camera/Vector.hpp">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/camera/commonmath.h">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/capture/KinectDisparityCompressor.h">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/capture/VideoPreProcessorCPU.h">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/capture/VideoPreProcessorGPU.h">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/capture/fileSource.h">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/capture/kinect.h">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/expm/expmHost.h">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/image2/Image2.h">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/image2/ImagePyramid2.h">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/imagematch/ICP.h">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/multicore/multicore.h">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/reconstruct/KeyFrame.h">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/reconstruct/KeyFrameModel.h">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/reconstruct/basic_math.h">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/reconstruct/zconv.h">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/rendering/BaseBuffer2.h">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/rendering/GLWindow.h">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/rendering/LineBuffer.h">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/rendering/TriangleBuffer2.h">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/rendering/VertexBuffer2.h">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/rendering/shader.h">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/rendering/teapot.h">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/structure/configuration.h">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/utils/warping/KeyFrameRing.h">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/kinectRecorder/testApplication.h">
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/CMake/rgbd-tracker_cmake_helpers.cmake">
+          <Option virtualFolder="CMake Files\CMake\" />
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/CMake/FindFreeNect.cmake">
+          <Option virtualFolder="CMake Files\CMake\" />
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/CMake/Findlibusb-1.0.cmake">
+          <Option virtualFolder="CMake Files\CMake\" />
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/../aurestudio/sdk/opencv-2.4.6.1/project.linux/OpenCVConfig-version.cmake">
+          <Option virtualFolder="CMake Files\..\aurestudio\sdk\opencv-2.4.6.1\project.linux\" />
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/../aurestudio/sdk/opencv-2.4.6.1/project.linux/OpenCVConfig.cmake">
+          <Option virtualFolder="CMake Files\..\aurestudio\sdk\opencv-2.4.6.1\project.linux\" />
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/ext/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\ext\" />
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/ext/poisson/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\ext\poisson\" />
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/ext/tinyxml/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\ext\tinyxml\" />
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\" />
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/gputracker/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\gputracker\" />
+      </Unit>
+      <Unit filename="/home/ttykkala/svn/rgbd-tracker/src/kinectRecorder/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\kinectRecorder\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>

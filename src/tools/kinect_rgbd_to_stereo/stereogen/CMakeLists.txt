@@ -1,0 +1,21 @@
+include_directories (include/)
+
+set(SRC_FILES src/main.cpp)
+list(APPEND SRC_FILES src/framebufferObject.cpp)
+list(APPEND SRC_FILES src/GLSLProgram.cpp)
+list(APPEND SRC_FILES src/renderbuffer.cpp)
+list(APPEND SRC_FILES src/SmokeRenderer.cpp)
+list(APPEND SRC_FILES src/SmokeShaders.cpp)
+list(APPEND SRC_FILES src/keyframe.cpp)
+list(APPEND SRC_FILES src/screenshot.cpp)
+list(APPEND SRC_FILES src/basic_math.cpp)
+list(APPEND SRC_FILES src/calib.cpp)
+list(APPEND SRC_FILES src/fileSource.cpp)
+list(APPEND SRC_FILES src/VideoPreProcessorCPU.cpp)
+list(APPEND SRC_FILES src/zconv.cpp)
+list(APPEND SRC_FILES src/multicore.cpp)
+list(APPEND SRC_FILES src/GroundTruth.cpp)
+
+cuda_add_executable(stereogen ${SRC_FILES})
+target_link_libraries(stereogen libtinyxml.a ${OPENGL_gl_LIBRARY} ${OPENGL_glu_LIBRARY} ${GLUT_LIBRARIES} ${X11_LIBRARIES} ${PNG_LIBRARY} ${GLEW_LIBRARIES} ${OpenCV_LIBS} ${CUDA_LIBRARIES})
+
